@@ -1,7 +1,9 @@
 body{
     width: 100vw;
-    height: 100vh; 
-    font: 1em; 
+    height: 200vh; 
+    font: 1rem;
+    margin: 0;
+    padding: 0; 
 }
 
 .row{
@@ -10,15 +12,20 @@ body{
 
 /*===============================Header====================================*/
 header{
-    height: 60%; 
+    height: 40%; 
     background: url('./assets/bg.jpg');
     background-size: auto;
 }
 .row-one{
     height: 20%; 
-    padding-top: 3%;
+    margin-top: 3%;
     font-size:0; 
     display:inline-block; 
+}
+.row-one>div{
+    display:inline-block;
+    vertical-align:top; 
+    box-sizing: border-box; 
 }
 .name-panel{
     width: 25%;
@@ -26,17 +33,14 @@ header{
     box-sizing: border-box;
     background: url('./assets/name-panel.png') no-repeat left top;
     background-size: contain; 
-    display: inline-block;
-    margin-right:10%;
+    margin: 0 5% 0 2%;
 }
 
 .nav_bars{
-    width: 60%;
+    width: 55%;
     height: 100%;
-    display:inline-block;
     position:relative;
-    float:right;
-    padding-right: 5%;      
+    vertical-align: top; 
 }
 
 .nav_bars ul{
@@ -48,12 +52,33 @@ header{
     text-decoration: none;
     display:inline-block;
     background: url('./assets/navbar-li.png') no-repeat;
-    background-size: contain; 
-    height: 30%; 
+    background-size: 100% 206%;    
+    height: 45%; 
     width: 25%; 
+    vertical-align:top; 
 }
 .nav_bars>ul>li>h3{
-    margin:0;
+    margin: 2% 0 0 17%;
     font-size: 1.17rem; 
+    color:white;
 
+}
+.nav_bars>ul>li>img{
+    margin-left: 17%;
+    width: 40%;
+}
+
+.tr-image{
+    width: 0%; 
+    height: 100%; 
+}
+.tr-image img{
+    top:10px;
+    position: absolute;
+    right: 2%; 
+    height: 70%; 
+    width: 40%; 
+}
+.row-two{
+    height: 74%; 
 }
