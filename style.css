@@ -1,0 +1,59 @@
+body{
+    width: 100vw;
+    height: 100vh; 
+    font: 1em; 
+}
+
+.row{
+    width: 100%; 
+}
+
+/*===============================Header====================================*/
+header{
+    height: 60%; 
+    background: url('./assets/bg.jpg');
+    background-size: auto;
+}
+.row-one{
+    height: 20%; 
+    padding-top: 3%;
+    font-size:0; 
+    display:inline-block; 
+}
+.name-panel{
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+    background: url('./assets/name-panel.png') no-repeat left top;
+    background-size: contain; 
+    display: inline-block;
+    margin-right:10%;
+}
+
+.nav_bars{
+    width: 60%;
+    height: 100%;
+    display:inline-block;
+    position:relative;
+    float:right;
+    padding-right: 5%;      
+}
+
+.nav_bars ul{
+    height: 100%; 
+    box-sizing:border-box;
+    padding:0; 
+}
+.nav_bars li{
+    text-decoration: none;
+    display:inline-block;
+    background: url('./assets/navbar-li.png') no-repeat;
+    background-size: contain; 
+    height: 30%; 
+    width: 25%; 
+}
+.nav_bars>ul>li>h3{
+    margin:0;
+    font-size: 1.17rem; 
+
+}
