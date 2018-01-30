@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    background-image: url(../bg2.jpg);
+}
+
+li { list-style-type: none }
+
+.name-panel{
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+.nav ul{
+    margin: 0;
+    padding: 2% 0 0 14%;
+ }
+
+.nav ul li{
+    background-image: url(../navbar-li.png);
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: left;
+    cursor: pointer;
+    color: white;
+    padding: 3px 0 0 20px;
+    height: 43px;
+    width: 173px;
+}
+
+li.active{
+    background-position-y: bottom;
+    height: 42px;
+}
+
+li.active::after{
+    content: url(../indicator.png);
+    display: block;
+    position: absolute;
+    bottom: 8px;
+}
+
+
+.nav{
+    text-align: center;
+    display: flex;
+    width: 100%;
+}
+
+.header-content{
+    margin: auto;
+    width: 66%;
+}
+
+.header-content img{
+    width: 100%;
+    border: 10px solid #292929;
+}
+
+.header-content > div{
+    position: relative;
+    font-size: 0;
+}
+
+
+.header-content > div::after{
+    content: url(../tab-bottom.png);
+    display: block;
+    position: absolute;
+    right: 0;
+}
+
+button{
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: gray;
+    cursor: pointer;
+    height: 4vmin;
+    margin: 3% 0;
+}
+
+.acts-wrapper, .features-wrapper{
+    color: white;
+    text-transform: uppercase;
+}
+
+.acts-wrapper>h3, .acts{
+    width: 66%;
+}
+
+.acts-wrapper>h3, .features>h3{
+    margin: 4% auto;
+}
+
+.acts{
+    background-image:url(../bg.jpg);
+    display: flex;
+    position: relative;
+    margin: 5% auto;
+    border: 8px solid #2d424b;
+    box-shadow: 1px 1px #3f6b82,
+                -1px -1px #3f6b82,
+                -1px 1px #3f6b82,
+                1px -1px #3f6b82;
+}
+
+.acts.one{
+    margin-top: 2%;
+}
+
+.acts h4, .acts p{
+    margin: 5px 5px 50px 5px ;
+}
+
+.acts h4 {
+    color: orange;
+}
+
+.acts p{
+    font-size: .9em;
+}
+
+.acts::after{
+    content: url(../tab-bottom-2.png);
+    display: block;
+    position: absolute;
+    right: -9px;
+    bottom: -39px;
+}
+
+/***************FEATURES****************************/
+
+.features{
+    margin:auto;
+    width: 66%;
+}
+
+.features ul{
+    line-height: 2.5em;
+}
+
+.features ul li{
+    counter-increment: li;
+}
+
+.features ul li::before{
+    content: url(../bullet-square.jpg) " " counter(li);
+    color: orange;
+    font-size: 1em;
+    word-spacing: 10px;
+    margin-right: 20px;
+}
+
+
+
+
+/***************FEATURES****************************/
