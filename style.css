@@ -1,0 +1,363 @@
+body{
+    width: 100vw;
+    /* height: 200vh;  */
+    font: 1rem;
+    margin: 0;
+    padding: 0; 
+}
+
+.row{
+    width: 100vw; 
+}
+
+/*===============================Header====================================*/
+header{
+    height: 40vw; 
+    background: url('./assets/bg.jpg');
+    background-size: auto;
+    padding:1%; 
+    box-sizing:border-box;
+}
+.row-one{
+    height: 20%; 
+    margin-top: 3%;
+    font-size:0; 
+    display:inline-block; 
+}
+.row-one>div{
+    display:inline-block;
+    vertical-align:top; 
+    box-sizing: border-box; 
+}
+.name-panel{
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+    background: url('./assets/name-panel.png') no-repeat left top;
+    background-size: 100% 100% ; 
+    margin: 0 5% 0 2%;
+    position:relative; 
+
+}
+.name-panel p{
+    font-size:0.5rem; 
+    color:white;
+    position: relative;
+    width: 50%;
+    top: 9%;
+    left: 43%;
+}
+#tl-name-panel{
+    position: absolute;
+    top: 2%;
+    width: 54%;
+    height: 9%;
+}
+
+.nav_bars{
+    width: 50%;
+    height: 100%;
+    position:relative;
+    vertical-align: top; 
+    left: 3%;
+}
+
+.nav_bars ul{
+    height: 100%; 
+    box-sizing:border-box;
+    padding:0; 
+    margin-top: 5%;
+}
+.nav_bars li{
+    text-decoration: none;
+    display:inline-block;
+    background: url('./assets/navbar-li.png') no-repeat;
+    background-size: 100% 200%;
+    height: 40%;
+    width: 25%;
+    vertical-align: top;
+}
+.nav_bars li:first-child{
+    background-position-y: 100%;
+}
+.nav_bars>ul>li>h3{
+    margin: 2% 0 0 17%;
+    font-size: 1.17rem; 
+    color:white;
+
+}
+.nav_bars>ul>li>img{
+    margin-left: 17%;
+    width: 40%;
+}
+
+.tr-image{
+    width: 0%; 
+    height: 100%; 
+}
+.tr-image img{
+    top: 2px;
+    position: absolute;
+    right: 2%;
+    height: 105%;
+    width: 55%;
+}
+.row-two{
+    height: 60%; 
+    font-size: 0;
+}
+
+.tl-image{
+    width: 20%;
+    height:100%;
+    display: inline-block;
+
+}
+.avenger-station{
+    background: url('./assets/avenger-station.png') no-repeat;
+    background-size: cover; 
+    border: 10px solid black; 
+    width: 70%; 
+    height: 100%; 
+    display: inline-block;
+    vertical-align: top; 
+    box-sizing: border-box;
+
+}
+
+#lm{
+    position:absolute; 
+    /* left:1%;  */
+    width: 15%; 
+}
+
+.row-three{
+    height: 10%; 
+}
+.row-three button{
+    color: black;
+    background-color: rgb(61, 61, 100); 
+    position:relative;
+    border: none; 
+    left:20%;
+    height:50%; 
+    vertical-align: top;
+    display:inline-block; 
+}
+.row-three div{
+    position: relative;
+    vertical-align: top;
+    width: 10%; 
+    display:inline-block ;
+    right: 10%;
+    float:right; 
+}
+.row-three img{
+    width: 100%; 
+}
+
+
+/*=======================1-2==========================================*/
+.row1-2, .row1-3, .row1-4, .row1-5{
+    height: 40vw; 
+    background: url('./assets/bg.jpg');
+    background-size: auto;
+    /* padding:1%;  */
+    box-sizing: border-box;
+    /* padding-left: 20%;  */
+    font-size: 0;
+    padding:1%; 
+}
+
+.row1-2 h2{
+    font-size: 1.5rem; 
+    /* margin-left:20%;  */
+    margin-top:0; 
+    width:70vw;
+    display:inline-block; 
+    vertical-align: top; 
+    color: white;
+
+}
+
+.act1, .act2, .act3, .features{
+    width: 70vw;
+    height: 80%; 
+    border: 10px solid black; 
+    /* margin-left:20%;  */
+    font-size: 1rem; 
+    box-sizing: border-box;
+    display:inline-block; 
+    vertical-align: top; 
+    background: url(./assets/square.png);
+    background-size: auto;
+    background-color: #2d4856;
+
+
+}
+.act1>p,h3{
+    display:inline-block; 
+    width:60%; 
+    color: white; 
+    margin:1% 2.5%; 
+}
+
+.act1 img{
+    float: right; 
+    width: 35%; 
+}
+.empty-container{
+    width: 20vw;
+    height: 100%;
+    float:left; 
+}
+
+.row1-2-last{
+    height: 10%; 
+}
+.row1-2-last div{
+    position: relative;
+    vertical-align: top;
+    width: 10%; 
+    display:inline-block ;
+    right: 10%;
+    float:right;  
+}
+
+.row1-2-last>div>img{
+    width:100%; 
+}
+
+/*==========================Act2 =============================*/
+.row1-3{
+    height: 30vw; 
+}
+
+.act2 p, h3{
+    display:inline-block; 
+    width:60%; 
+    color: white; 
+    margin:1% 2.5%; 
+}
+
+
+.act2>img{
+    float: left; 
+    width: 35%; 
+}
+
+
+.row1-3-last{
+    height: 10%; 
+}
+.row1-3-last div{
+    position: relative;
+    vertical-align: top;
+    width: 10%; 
+    display:inline-block ;
+    right: 10%;
+    float:right;  
+}
+
+.row1-3-last>div>img{
+    width:100%; 
+}
+
+/*=========================Act 3======================================*/
+.row1-4{
+    height: 30vw; 
+}
+
+.act3 p, h3{
+    display:inline-block; 
+    width:55%; 
+    color: white; 
+    margin:1% 2.5%; 
+}
+
+
+.act3>img{
+    float: right; 
+    width: 40%; 
+    height:100%; 
+}
+
+
+.row1-4-last{
+    height: 10%; 
+}
+.row1-4-last div{
+    position: relative;
+    vertical-align: top;
+    width: 10%; 
+    display:inline-block ;
+    right: 10%;
+    float:right;  
+}
+.row1-4-last>div>img{
+    width:100%; 
+}
+
+
+
+
+
+/*========================================Features =================================*/ 
+
+
+
+
+
+.features>ul{
+    counter-reset: li; 
+}
+.features li{
+    color: white; 
+    list-style: square;
+    counter-increment: li; 
+}
+
+.features li:before{
+    content: counter(li);
+    color: orange;
+    font-size: 1em;
+}
+
+.row1-5>img{
+    position: absolute; 
+    left: 11%; 
+    bottom: 20%; 
+
+}
+
+
+.row1-5{
+    height: 40vw; 
+    position:relative; 
+}
+
+.features{
+    border:none; 
+    height: 50%; 
+    background: none; 
+    background-color: none; 
+}
+
+#lastImage{
+    position:relative; 
+    height: 30%; 
+    width: 60%; 
+    bottom: -3%;
+    left:19%; 
+
+}
+
+.features button{
+    color: black;
+    background-color: rgb(61, 61, 100); 
+    margin: 1% 2.5%;
+    border:none; 
+    height: 15%; 
+}
+
+
