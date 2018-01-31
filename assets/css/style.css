@@ -5,18 +5,63 @@
 
 #root{
     background-image: url(../bg2.jpg);
+    font-family: 'Oswald', sans-serif;
 }
 
 li { list-style-type: none }
+ul { padding: 0 }
 
+/*************BORDERS*******************************/
+
+.borders{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.left.middle{
+    clear: left;
+    padding-top: 4%;
+}
+.right.middle{
+    clear: right;
+    padding-top: 4%;
+}
+
+.bottom{
+    position: absolute;
+    padding-top: 0;
+    bottom: 0;
+    margin: 10px;
+}
+
+.bottom.right{
+    right: 0;
+    width: 50%;
+}
+
+/*************BORDERS*******************************/
+/*************CONTENT*******************************/
 .name-panel{
     margin-left: 2%;
     margin-top: 1%;
+    z-index: 99;
 }
 
 .nav ul{
-    margin: 0;
-    padding: 2% 0 0 14%;
+    width: 100%;
+    margin-left: 6%;
+    padding-top: 3%;
  }
 
 .nav ul li{
@@ -46,7 +91,6 @@ li.active::after{
 
 
 .nav{
-    text-align: center;
     display: flex;
     width: 100%;
 }
@@ -95,6 +139,7 @@ button{
 
 .acts-wrapper>h3, .features>h3{
     margin: 4% auto;
+    font-size: 3vmin;
 }
 
 .acts{
@@ -107,6 +152,10 @@ button{
                 -1px -1px #3f6b82,
                 -1px 1px #3f6b82,
                 1px -1px #3f6b82;
+}
+
+.acts > div{
+    padding: 0 10px;
 }
 
 .acts.one{
@@ -133,6 +182,7 @@ button{
     bottom: -39px;
 }
 
+/*************CONTENT*******************************/
 /***************FEATURES****************************/
 
 .features{
@@ -156,7 +206,19 @@ button{
     margin-right: 20px;
 }
 
-
-
-
 /***************FEATURES****************************/
+.footer{
+    width: 100%;
+    height: 10vmin;
+    position: relative;
+    padding: 10px;
+}
+
+.footer .left, .footer .right{
+    position: absolute;
+    bottom: 0;
+}
+
+.footer .right{
+    float: right;
+}
