@@ -53,9 +53,21 @@ ul { padding: 0 }
 /*************BORDERS*******************************/
 /*************CONTENT*******************************/
 .name-panel{
+    position: relative;
     margin-left: 2%;
     margin-top: 1%;
     z-index: 99;
+}
+
+.name-panel span{
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    color: white;
+    font-size: 0.8em;
+    width: 100%;
+    top: 20px;
+    right: 15px;
 }
 
 .nav ul{
