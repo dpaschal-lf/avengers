@@ -1,20 +1,22 @@
 body{
     width: 100vw;
-    height: 200vh; 
+    /* height: 200vh;  */
     font: 1rem;
     margin: 0;
     padding: 0; 
 }
 
 .row{
-    width: 100%; 
+    width: 100vw; 
 }
 
 /*===============================Header====================================*/
 header{
-    height: 40%; 
+    height: 40vw; 
     background: url('./assets/bg.jpg');
     background-size: auto;
+    padding:1%; 
+    box-sizing:border-box;
 }
 .row-one{
     height: 20%; 
@@ -34,28 +36,46 @@ header{
     background: url('./assets/name-panel.png') no-repeat left top;
     background-size: contain; 
     margin: 0 5% 0 2%;
+    position:relative; 
+
+}
+.name-panel p{
+    font-size:0.5rem; 
+    color:white;
+    position: relative;
+    width: 50%;
+    top: 9%;
+    left: 43%;
+}
+#tl-name-panel{
+    position: absolute;
+    top: 2%;
+    width: 54%;
+    height: 9%;
 }
 
 .nav_bars{
-    width: 55%;
+    width: 50%;
     height: 100%;
     position:relative;
     vertical-align: top; 
+    left: 3%;
 }
 
 .nav_bars ul{
     height: 100%; 
     box-sizing:border-box;
     padding:0; 
+    margin-top: 5%;
 }
 .nav_bars li{
     text-decoration: none;
     display:inline-block;
     background: url('./assets/navbar-li.png') no-repeat;
-    background-size: 100% 206%;    
-    height: 45%; 
-    width: 25%; 
-    vertical-align:top; 
+    background-size: 100% 210%;
+    height: 28%;
+    width: 25%;
+    vertical-align: top;
 }
 .nav_bars>ul>li>h3{
     margin: 2% 0 0 17%;
@@ -73,12 +93,113 @@ header{
     height: 100%; 
 }
 .tr-image img{
-    top:10px;
+    top: 2px;
     position: absolute;
-    right: 2%; 
-    height: 70%; 
-    width: 40%; 
+    right: 2%;
+    height: 105%;
+    width: 55%;
 }
 .row-two{
-    height: 74%; 
+    height: 60%; 
+    font-size: 0;
+}
+
+.tl-image{
+    width: 20%;
+    height:100%;
+    display: inline-block;
+
+}
+.avenger-station{
+    background: url('./assets/avenger-station.png') no-repeat;
+    background-size: cover; 
+    border: 10px solid black; 
+    width: 70%; 
+    height: 100%; 
+    display: inline-block;
+    vertical-align: top; 
+    box-sizing: border-box;
+
+}
+
+#lm{
+    position:absolute; 
+    left:1%; 
+    width: 15%; 
+}
+
+.row-three{
+    height: 10%; 
+}
+.row-three button{
+    color: black;
+    background-color: rgb(61, 61, 100); 
+    position:relative;
+    border: none; 
+    left:20%;
+    height:50%; 
+    vertical-align: top;
+    display:inline-block; 
+}
+.row-three div{
+    position: relative;
+    vertical-align: top;
+    left:56%; 
+    width: 15%; 
+    display:inline-block ;
+}
+.row-three img{
+    width: 100%; 
+}
+
+
+/*=======================1-2==========================================*/
+.row.row1-2{
+    height: 40vw; 
+    background: url('./assets/bg.jpg');
+    background-size: auto;
+    /* padding:1%;  */
+    box-sizing: border-box;
+    /* padding-left: 20%;  */
+    font-size: 0;
+    padding:1%; 
+}
+
+.row.row1-2 h2{
+    font-size: 1.5rem; 
+    /* margin-left:20%;  */
+    margin-top:0; 
+    width:70%;
+    display:inline-block; 
+    vertical-align: top; 
+
+}
+
+.act1{
+    width: 70%;
+    height: 80%; 
+    border: 10px solid black; 
+    /* margin-left:20%;  */
+    font-size: 1rem; 
+    box-sizing: border-box;
+    display:inline-block; 
+    vertical-align: top; 
+
+
+}
+.act1 p, h3{
+    display:inline-block; 
+    width:60%; 
+    color: white; 
+    margin:1% 2.5%; 
+}
+
+.act1 img{
+    float: right; 
+    width: 35%; 
+}
+.empty-container{
+    width: 20%;
+    height: 100%;
+    float:left; 
 }
