@@ -74,6 +74,7 @@ ul { padding: 0 }
     width: 100%;
     margin-left: 6%;
     padding-top: 3%;
+    counter-reset: li;
  }
 
 .nav ul li{
@@ -89,14 +90,24 @@ ul { padding: 0 }
     width: 173px;
 }
 
-li.active{
+.nav ul li::after{
+    counter-increment: li;
+    content: "field 00" counter(li);
+    color: lightgray;
+    display:block;
+    font-size: 0.6em;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+
+.nav ul li.active{
     background-position-y: bottom;
     height: 42px;
 }
 
-li.active::after{
-    content: url(../indicator.png);
-    display: block;
+.nav ul li.active::after{
+    content: url(../indicator.png) " field 00" counter(li);
     position: absolute;
     bottom: 8px;
 }
