@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    background-image: url(../bg2.jpg);
+    font-family: 'Oswald', sans-serif;
+}
+
+li { list-style-type: none }
+ul { padding: 0 }
+
+/*************BORDERS*******************************/
+
+.borders{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.left.middle{
+    clear: left;
+    padding-top: 4%;
+}
+.right.middle{
+    clear: right;
+    padding-top: 4%;
+}
+
+.bottom{
+    position: absolute;
+    padding-top: 0;
+    bottom: 0;
+    margin: 10px;
+}
+
+.bottom.right{
+    right: 0;
+    width: 50%;
+}
+
+/*************BORDERS*******************************/
+/*************CONTENT*******************************/
+.name-panel{
+    position: relative;
+    margin-left: 2%;
+    margin-top: 1%;
+    z-index: 99;
+}
+
+.name-panel span{
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    color: white;
+    font-size: 0.8em;
+    width: 100%;
+    top: 20px;
+    right: 15px;
+}
+
+.nav ul{
+    width: 100%;
+    margin-left: 6%;
+    padding-top: 3%;
+    counter-reset: li;
+ }
+
+.nav ul li{
+    background-image: url(../navbar-li.png);
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: left;
+    cursor: pointer;
+    color: white;
+    padding: 3px 0 0 20px;
+    height: 43px;
+    width: 173px;
+}
+
+.nav ul li::after{
+    counter-increment: li;
+    content: "field 00" counter(li);
+    color: lightgray;
+    display:block;
+    position: absolute;
+    font-size: 0.6em;
+    right: 20px;
+    bottom: 10px;
+}
+
+.nav ul li:hover{
+    background-position-y: 100%;
+    height: 42px;
+}
+
+.nav ul li:hover::after{
+    content: url(../indicator.png) " field 00" counter(li);
+    position: absolute;
+    bottom: 8px;
+}
+
+
+.nav{
+    display: flex;
+    width: 100%;
+}
+
+.header-content{
+    margin: auto;
+    width: 66%;
+}
+
+.header-content img{
+    width: 100%;
+    border: 10px solid #292929;
+}
+
+.header-content > div{
+    position: relative;
+    font-size: 0;
+}
+
+
+.header-content > div::after{
+    content: url(../tab-bottom.png);
+    display: block;
+    position: absolute;
+    right: 0;
+}
+
+button{
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: gray;
+    cursor: pointer;
+    height: 4vmin;
+    margin: 3% 0;
+}
+
+.acts-wrapper, .features-wrapper{
+    color: white;
+    text-transform: uppercase;
+}
+
+.acts-wrapper>h3, .acts{
+    width: 66%;
+}
+
+.acts-wrapper>h3, .features>h3{
+    margin: 4% auto;
+    font-size: 3vmin;
+}
+
+.acts{
+    counter-increment: acts;
+    background-image:url(../bg.jpg);
+    position: relative;
+    margin: 5% auto;
+    border: 8px solid #2d424b;
+    box-shadow: 1px 1px #3f6b82,
+                -1px -1px #3f6b82,
+                -1px 1px #3f6b82,
+                1px -1px #3f6b82;
+}
+
+.acts > div {
+    padding: 10px;
+    position: relative;
+    overflow: auto;
+}
+
+.acts > div::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.acts.one > div > img, .acts.three > div > img{
+    float: right;
+    margin-left: 3%;
+}
+
+.acts.two > div > img{
+    float: left;
+    margin-right: 3%;
+}
+.acts.one{
+    margin-top: 2%;
+}
+
+.acts h4{
+    margin: 5px 5px 50px 5px ;
+}
+
+.acts h4 {
+    color: orange;
+}
+
+.acts::before{
+    content: "act " counter(acts);
+    display: block;
+    position: absolute;
+    font-size: .8em;
+    bottom: -30px;
+    right: 50px;
+}
+
+.acts::after{
+    content: url(../tab-bottom-2.png);
+    display: block;
+    position: absolute;
+    right: -9px;
+    bottom: -39px;
+}
+
+/*************CONTENT*******************************/
+/***************FEATURES****************************/
+
+.features{
+    margin:auto;
+    width: 66%;
+}
+
+.features ul{
+    line-height: 2.5em;
+}
+
+.features ul li{
+    counter-increment: li;
+}
+
+.features ul li::before{
+    content: url(../bullet-square.jpg) " " counter(li);
+    color: orange;
+    font-size: 1em;
+    word-spacing: 10px;
+    margin-right: 20px;
+}
+
+/***************FEATURES****************************/
+.footer{
+    width: 100%;
+    height: 10vmin;
+    position: relative;
+    padding: 10px;
+}
+
+.footer .left, .footer .right{
+    position: absolute;
+    bottom: 0;
+}
+
+.footer .right{
+    float: right;
+}
